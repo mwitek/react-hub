@@ -6,7 +6,7 @@ var NotesList = React.createClass({
   },
   render: function(){
     if(this.props.notes && this.props.notes.length > 0) {
-      var notes = this.props.notes[0].map(function(note, index){
+      var notes = this.props.notes.map(function(note, index){
         return <li key={index}>{note}</li>
       });
       return(
